@@ -2,49 +2,49 @@ package baseball;
 
 public class BaseBallTeam {
 
-    private String teamName; //チーム名
-    private int Win; //勝ち数
-    private int Lose; //負け数
-    private int Draw; //引き分け数
-    private double Rate; //勝率
+    private String name; //チーム名
+    private int win; //勝ち数
+    private int lose; //負け数
+    private int draw; //引き分け数
+    private double rate; //勝率
 
-    public void setTeamName(String teamName) {
-        this.teamName = teamName;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getTeamName() {
-        return teamName;
+    public String getName() {
+        return name;
     }
 
-    public void setWin(int Win) {
-        this.Win = Win;
+    public void setWin(int win) {
+        this.win = win;
     }
     public int getWin() {
-        return Win;
+        return win;
     }
 
-    public void setLose(int Lose) {
-        this.Lose = Lose;
+    public void setLose(int lose) {
+        this.lose = lose;
     }
     public int getLose() {
-        return Lose;
+        return lose;
     }
 
-    public void setDraw(int Draw) {
-        this.Draw = Draw;
+    public void setDraw(int draw) {
+        this.draw = draw;
     }
     public int getDraw() {
-        return Draw;
+        return draw;
     }
 
-    //getRateメソッド
-    public double getRate(double Win, double Lose) {
-        double result = Win / (Win + Lose); //勝ち数/(勝ち数+負け数)
-        return result;
+    //getrateメソッド
+    public double getRate() {
+        this.rate = (double)win / (double)(win + lose);
+        return rate;
     }
 
     //reportメソッド
-    public void report(String name, int Win, int Lose, int Draw, double Rate) {
-      System.out.println(name + " の2022年の成績は " + Win + "勝 " + Lose + "敗 " + Draw + "分、勝率は " + Rate + "です。");
+    public void report() {
+        System.out.println(name + " の2022年の成績は " + win + "勝 " + lose + "敗 " + draw + "分、勝率は " + rate + "です。");
     }
 
 }
