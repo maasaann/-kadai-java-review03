@@ -67,13 +67,6 @@ public class Review03 {
         int draw5 = baseBallTeam5.getDraw();
         int draw6 = baseBallTeam6.getDraw();
 
-        double rate1 = baseBallTeam1.getRate();
-        double rate2 = baseBallTeam2.getRate();
-        double rate3 = baseBallTeam3.getRate();
-        double rate4 = baseBallTeam4.getRate();
-        double rate5 = baseBallTeam5.getRate();
-        double rate6 = baseBallTeam6.getRate();
-
         baseBallTeam1.report();
         baseBallTeam2.report();
         baseBallTeam3.report();
