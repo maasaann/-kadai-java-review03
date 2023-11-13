@@ -44,14 +44,12 @@ public class BaseBallTeam {
     //reportメソッド
     public void report() {
 
-        double rete = getRate();
-
         System.out.println(
                         name + " の2022年の成績は " +
                         win + "勝 " +
                         lose + "敗 " +
                         draw + "分、勝率は " +
-                        rete + "です。");
+                        getRate() + "です。");
     }
 
 }
