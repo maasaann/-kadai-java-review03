@@ -10,29 +10,17 @@ public class BaseBallTeam {
     public void setName(String name) {
         this.name = name;
     }
-    public String getName() {
-        return name;
-    }
 
     public void setWin(int win) {
         this.win = win;
-    }
-    public int getWin() {
-        return win;
     }
 
     public void setLose(int lose) {
         this.lose = lose;
     }
-    public int getLose() {
-        return lose;
-    }
 
     public void setDraw(int draw) {
         this.draw = draw;
-    }
-    public int getDraw() {
-        return draw;
     }
 
     //getrateメソッド
